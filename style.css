@@ -42,16 +42,20 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 5%;
-    height: 5vh;
+    height:4.5vh;
 }
 
 input{
     width: 100%;
     border-radius: 10px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2.5px 2px rgba(0,0,0,0.5);
     
 
+}
+
+input:hover{
+    background-color: rgb(240, 240, 240);
 }
 
 #searchbutton {
@@ -72,5 +76,40 @@ img {
     justify-content: end;
     height: 4vh;
     
+}
+#color-line{
+    background-color: gold;
+    text-align: center;
+    letter-spacing: 7.5px;
+    font-weight:bolder;
+    padding: 4px;
+}
+
+#Sort {
+    margin: 2.5%;
+}
+
+.container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  width: 80%;
+  border: 3px solid rgb(255, 192, 4);
+  padding: 10px;
+  
+}
+
+.document {
+    margin: auto;
+    
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    height: 50px;
+    width: 15vw;
+    border: black;
+    border-style: solid;
+
 }
 
