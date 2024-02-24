@@ -7,7 +7,7 @@ body {
 header {
     display: flex;
     justify-content:end;
-    background-color: orange;
+    background-color: #FFC300;
     height: 10%;
     align-items: end;
     position: sticky;
@@ -30,7 +30,8 @@ nav{
 a{
     text-decoration: none;
     padding: 1vw;
-    font-size: 3vh;
+    font-size: 3.2vh;
+    
     
 }
 
@@ -43,6 +44,7 @@ a:hover {
     justify-content: center;
     padding: 5%;
     height:4.5vh;
+    background-color: #ffffff;
 }
 
 input{
@@ -78,7 +80,7 @@ img {
     
 }
 #color-line{
-    background-color: gold;
+    background-color: #FFEA00;
     text-align: center;
     letter-spacing: 7.5px;
     font-weight:bolder;
@@ -92,11 +94,12 @@ img {
 .container{
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: auto;
   width: 80%;
-  border: 3px solid rgb(255, 192, 4);
+  border: none;
   padding: 10px;
+  
   
 }
 
@@ -106,10 +109,25 @@ img {
     text-align: center;
     align-content: center;
     background-color: white;
-    height: 50px;
-    width: 15vw;
-    border: black;
+    height: 40vh;
+    width: 18vw;
+    border-image: linear-gradient(rgb(255, 230, 112), rgb(255, 100, 100),rgb(255, 100, 100)) 30; 
+    border-width: 4px;
+    border-style: solid;
     border-style: solid;
 
+}
+
+.document:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1F1300;
+    text-align: end;
+    color: white;
+    margin-top: 35px;
+    padding: 20px;
+    height: 15vh;
 }
 
