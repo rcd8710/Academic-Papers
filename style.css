@@ -28,11 +28,9 @@ nav{
   }
 
 a{
+    padding: 5px;
+    font-size: 2vw;
     text-decoration: none;
-    padding: 1vw;
-    font-size: 3.2vh;
-    
-    
 }
 
 a:hover {
@@ -102,42 +100,53 @@ img {
   
   
 }
-
 .document {
+    position: relative; /* Set relative positioning on the container */
     margin: auto;
-    
     text-align: center;
     align-content: center;
     background-color: white;
     height: 40vh;
     width: 18vw;
-    border-image: linear-gradient(rgb(255, 230, 112), rgb(255, 100, 100),rgb(255, 100, 100)) 30; 
+    border-image: linear-gradient(rgb(255, 230, 112), rgb(255, 100, 100), rgb(255, 100, 100)) 30; 
     border-width: 4px;
     border-style: solid;
-    
+}
 
+.document a {
+    position: absolute; /* Set absolute positioning on the anchor */
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.document img {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .document p {
     display: flex;
-    border-style:double;
-    
+    border-style: double;
+    text-align: center;
     border-radius: 30px;
     background-color: #ffffff;
-    
     margin-top: 5px;
     margin-right: 5px;
     margin-left: 5px;
-   
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+    text-overflow: ellipsis;
 }
 
 .document:hover {
     cursor: pointer;
-    border-image: linear-gradient(rgb(255, 7, 7), rgb(255, 255, 5)) 30; 
+    border-image: linear-gradient(rgb(255, 7, 7), rgb(255, 255, 5)) 30;
 }
+
 footer {
     position: absolute;
     width: 95%;
@@ -145,7 +154,7 @@ footer {
     
     text-align: end;
     color: white;
- 
+    margin-top: auto;
     padding: 35px;
     height: 15vh;
 }
@@ -185,4 +194,9 @@ footer {
     text-align: end;
     font-size: 14px;
     color:white;
+}
+
+p{
+    text-align: center;
+    
 }
