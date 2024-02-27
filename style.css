@@ -114,20 +114,44 @@ img {
     border-image: linear-gradient(rgb(255, 230, 112), rgb(255, 100, 100),rgb(255, 100, 100)) 30; 
     border-width: 4px;
     border-style: solid;
-    border-style: solid;
+    
 
+}
+
+.document p {
+    display: flex;
+    border-style:double;
+    
+    border-radius: 30px;
+    background-color: #ffffff;
+    
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
 }
 
 .document:hover {
     cursor: pointer;
+    border-image: linear-gradient(rgb(255, 7, 7), rgb(255, 255, 5)) 30; 
 }
-
 footer {
     background-color: #1F1300;
     text-align: end;
     color: white;
-    margin-top: 35px;
-    padding: 20px;
+  
+    padding: 35px;
     height: 15vh;
 }
 
+
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    align-items: flex-end;
+}
