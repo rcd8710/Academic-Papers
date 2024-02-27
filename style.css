@@ -96,7 +96,7 @@ img {
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  width: 80%;
+  height: 80%;
   border: none;
   padding: 10px;
   
@@ -128,7 +128,7 @@ img {
     margin-top: 5px;
     margin-right: 5px;
     margin-left: 5px;
-    padding: 10px;
+   
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
@@ -139,19 +139,50 @@ img {
     border-image: linear-gradient(rgb(255, 7, 7), rgb(255, 255, 5)) 30; 
 }
 footer {
+    position: absolute;
+    width: 95%;
     background-color: #1F1300;
+    
     text-align: end;
     color: white;
-  
+ 
     padding: 35px;
     height: 15vh;
 }
 
 
+#pfp{
+    display:flex;
+  
+    
+    align-content: center;
+    
+    border-radius: 1000px;
+    height: 50%;
+    padding:100px;
+}
 
-p {
+
+#write {
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-style: solid;
+    width: 40vw;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 237);
+    border-color: rgb(180, 180, 180);
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-color: black;
+    
+}
+
+
+.foot {
     text-align: end;
-    align-items: flex-end;
+    font-size: 14px;
+    color:white;
 }
