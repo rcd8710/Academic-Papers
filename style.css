@@ -7,7 +7,7 @@ body {
 header {
     display: flex;
     justify-content:end;
-    background-color: #FFC300;
+    background-color: rgb(1, 1, 97);
     height: 10%;
     align-items: end;
     position: sticky;
@@ -16,7 +16,7 @@ header {
 
 nav{
     margin-bottom: 2px;
-    -webkit-text-fill-color: black;
+    -webkit-text-fill-color: rgb(250, 250, 250);
     text-decoration: none;
     margin-right: 20px;
     
@@ -35,6 +35,7 @@ a{
 
 a:hover {
     text-decoration: underline;
+    text-decoration-color: white;
 }
 
 #input-bar{
@@ -78,11 +79,12 @@ img {
     
 }
 #color-line{
-    background-color: #FFEA00;
+    background-color: silver;
     text-align: center;
     letter-spacing: 7.5px;
     font-weight:bolder;
     padding: 4px;
+    color: rgb(0, 0, 0);
 }
 
 #Sort {
@@ -97,6 +99,7 @@ img {
   height: 80%;
   border: none;
   padding: 10px;
+  background-color: #f0f1f3;
   
   
 }
@@ -107,10 +110,10 @@ img {
     align-content: center;
     background-color: white;
     height: 40vh;
-    width: 18vw;
-    border-image: linear-gradient(rgb(255, 230, 112), rgb(255, 100, 100), rgb(255, 100, 100)) 30; 
+    width: 15vw;
+    border-radius: 5px;
     border-width: 4px;
-    border-style: solid;
+    border-style:  double;
 }
 
 .document a {
@@ -123,13 +126,13 @@ img {
 }
 
 .document img {
-    height: 85%;
+    height: 60%;
     width: 100%;
     object-fit: cover;
 }
 
 .document p {
-    display: flex;
+   
     border-style: double;
     text-align: center;
     border-radius: 30px;
@@ -137,15 +140,22 @@ img {
     margin-top: 5px;
     margin-right: 5px;
     margin-left: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
+}
+
+P{
+    text-align: center;
 }
 
 .document:hover {
     cursor: pointer;
-    border-image: linear-gradient(rgb(255, 7, 7), rgb(255, 255, 5)) 30;
+    border-color: navy;
 }
+
+.document:hover p{
+    border-color: navy;
+}
+
 
 footer {
     position: absolute;
